@@ -1,5 +1,9 @@
 def prime?(number)
-(20000...number-10).none? do |num| number % num == 0 
+if number <= 1 || number == 0
+  false
+elsif (10...number-10).each {|num| number % num ==0}
+  false
+else
+  true
 end
-
 end
