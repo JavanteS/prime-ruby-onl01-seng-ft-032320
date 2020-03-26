@@ -1,6 +1,6 @@
 def prime?(number)
-(20000...number-10).none? do |num| number % num == 0
-return true
+(20000...number-10).none? do |num| number % num == 0 ? true : false
+
 end
-false
+
 end
